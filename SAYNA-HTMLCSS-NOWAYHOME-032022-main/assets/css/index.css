@@ -1,0 +1,172 @@
+:root{
+    --primary-ad-color: #9b9b9b;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --blue-color:#114c92;
+}
+
+main #hero{
+    background-image: linear-gradient(to bottom, #000000, #310f17, #5c0f1f, #870c1e, #b11313);
+    background-color: var(--primary-ad-color);
+    height: 870px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size:contain;
+}
+
+/* reglage des photos */
+#hero #marveltext{
+    position: relative;
+    left: 25%;
+}
+
+#hero #marvelimage{
+    position: absolute;
+    right: 1px;
+}
+
+.box{
+    margin-top: -300px;
+}
+
+.titre{
+    margin-bottom: 50px;
+}
+
+#lesspiderman{
+    background-color: var(--primary-ad-color);
+}
+#lesspiderman h1{
+    font-size: 35px;
+}
+.cta{
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.button1{
+    background-color: var(--white-ad-color);
+    color: var(--primary-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.cta .button2{
+    border: var(--white-ad-color) 2px solid;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.card-text{
+    text-align: justify;
+}
+/* .card-unique{
+    width: 30%;
+    margin-right: auto;
+} */
+.card-unique ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#spiderman{
+    color: var(--white-ad-color);
+    background-color: var(--blue-color);
+    height: 550px;
+    background-image: url("../img/img5.png");
+    background-position: center left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+h1{
+    font-family: 'far_from_homecomingregular';
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#spiderman form{
+    display: flex;
+    flex-direction: column;
+}
+
+#spiderman .spiderman-formulaire .form-spiderman, input[type=submit]{
+    width: 375px;
+    border-radius: 30px;
+    color: var(--white-ad-color);
+    border-color: var(--white-ad-color);
+    padding: 5px;
+    margin: 10px auto;
+}
+
+input[type=submit]{
+    width: 200px;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+#newsletter{
+    background-color: var(--primary-ad-color);
+    height: 550px;
+    background-image: url("../img/img6.png");
+    background-position: center right;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.newsletter-formulaire{
+    margin-top: 70px;
+}
+
+.newsletter-formulaire input[type=text],.newsletter-formulaire input[type=email]{
+    border-radius: 20px;
+    width: 400px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    border-color: white;
+}
+::placeholder{
+    color: white;
+}
+
+.newsletter-formulaire input[type=submit]{
+    background-color: white;
+    color: #000000;
+}
+
+/* popup pour le formulaire */
+#modal{
+    background-color: var(--white-ad-color);
+    color: var(--black-ad-color);
+    display: none;
+}
+
+/* insertion des Icones dans le footer */
+.media{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-icones{
+    background-color: var(--primary-ad-color);
+    color: var(--black-ad-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* création du fade in */
+.reveal{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
